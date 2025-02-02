@@ -38,7 +38,7 @@ public class BookResource {
     @GET
     @Path("/{id}")
     public Optional<Book> getBookById(@PathParam("id") int id) {
-        log.info("Get book by id info found{}");
+        log.info("Get book by id, info found");
         return bookRepository.getBookById(id);
     }
 }

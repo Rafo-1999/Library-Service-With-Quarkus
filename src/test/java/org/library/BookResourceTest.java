@@ -37,7 +37,7 @@ class BookResourceTest {
                 .pathParam("id", 1);
         when()
         .get("api/books/1")
-            .then().statusCode(200).body("author", is("Author1"),
-                                         "title",is("Title1"));
+            .then().statusCode(200).body("author", is("Joshua Bloch"),
+                                         "title",is("Effective Java"));
     }
 }
